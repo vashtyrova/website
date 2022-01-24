@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shtyrova Vlada IAS-20-2</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">John Joseph <br> Nicholson</div>
+                        <div class="user__prof">Actor and filmmaker</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link">Movies</a>
+                    <a href="#" class="nav__link">About me</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Contact</a>
+                    <a href="#" class="nav__link nav__link-btn" data-modal="#modal_hire_me">Hire me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello, I'm</h2>
+                    <h1 class="intro__title">Jack Nicholson</h1>
+                    <div class="intro__text">Actor and filmmaker</div>
+                    <div class="social">
+                        <a href="#" class="social__link"><img src="images/vkontakte.svg" alt="VK"></a>
+                        <a href="#" class="social__link"><img src="images/in.svg" alt="INST"></a>
+                        <a href="#" class="social__link"><img src="images/facebook.svg" alt="FB"></a>
+                        <a href="#" class="social__link"><img src="images/twitter.svg" alt="TW"></a>
+                    </div>
+                    <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
+                    <button type="button" class="btn" data-modal="#modal_resume">
+                        See my resume
+                    </button>
+                </div>
+                <img src="images/photo1.png" alt="Photo1" class="intro__photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKS -->
+
+    <section class="works">
+        <div class="container">
+            <div class="works__nav">
+                <a href="#" class="works__nav-link">All</a>
+                <a href="#" class="works__nav-link">Crime</a>
+                <a href="#" class="works__nav-link">Drama</a>
+                <a href="#" class="works__nav-link">Interaction</a>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio__col">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img src="images/poster1.jpg" alt="Poster1" class="work__image">
+                        <div class="work__content">
+                            <div class="work__cat">Category: Crime</div>
+                            <div class="work__title">
+                                The Departed
+                                <time class="work__date" datatime="2021-28-02">2006</time>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img src="images/poster2.jpg" alt="Poster2" class="work__image">
+                        <div class="work__content">
+                            <div class="work__cat">Category: Crime</div>
+                            <div class="work__title">
+                                The Pledge
+                                <time class="work__date" datatime="2021-28-02">2001</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img src="images/poster3.jpg" alt="Poster3" class="work__image">
+                        <div class="work__content">
+                            <div class="work__cat">Category: Drama</div>
+                            <div class="work__title">
+                                As good as it gets
+                                <time class="work__date" datatime="2021-28-02">1997</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work" data-modal="#modal_project_4">
+                        <img src="images/poster4.jpg" alt="Poster4" class="work__image">
+                        <div class="work__content">
+                            <div class="work__cat">Category: Drama</div>
+                            <div class="work__title">
+                                About schmidt
+                                <time class="work__date" datatime="2021-28-02">2002</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work" data-modal="#modal_project_5">
+                        <img src="images/poster5.jpg" alt="Poster5" class="work__image">
+                        <div class="work__content">
+                            <div class="work__cat">Category: Comedy</div>
+                            <div class="work__title">
+                                Anger managment
+                                <time class="work__date" datatime="2021-28-02">2003</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work" data-modal="#modal_project_6">
+                        <img src="images/poster6.jpg" alt="Poster6" class="work__image">
+                        <div class="work__content">
+                            <div class="work__cat">Category: Comedy</div>
+                            <div class="work__title">
+                                The bucket list
+                                <time class="work__date" datatime="2021-28-02">2007</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img src="images/Jack.png" alt="Jack" class="about__image">
+                </div>
+                <div class="about__content">
+                    <h3 class="about__title">About me</h3>
+                    <h2 class="about__bigtitle">Who am i</h2>
+                    <div class="about__text">
+                        <p>John Joseph Nicholson is an American actor and filmmaker whose career has spanned more than
+                            60 years. He is known for having played a wide range of starring and supporting roles,
+                            including comic characters, romantic leads, anti-heroes,
+                            and villains.</p>
+                        <p>Nicholson's 12 Academy Award nominations make him the most nominated male actor in the
+                            Academy's history. He has won the Academy Award for Best Actor twice, once for One Flew Over
+                            the Cuckoo's Nest (1975) and once for As Good as
+                            It Gets (1997).</p>
+                        <p>He is one of only three male actors to win three Academy Awards, and one of only two actors
+                            to be nominated for an Academy Award for acting in every decade from the 1960s to the 2000s.
+                        </p>
+                        <a href="" class="btn" data-modal="#modal_hire_me">Hire me</a>
+                        <button class="btn" type="button" data-modal="#modal_resume">See my resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    <p>One of the best films of the 21st century, The Departed keeps you on the edge of your seat and is
+                        incredibly exhilarating and the characters are incredibly well written and given great
+                        backstory. The ending will shock you and everything
+                        that comes before is some of Martin Scorsese's best work.</p>
+                </div>
+                <div class="reviews__author">
+                    <img src="images/author.jpg" alt="Author" class="reviews__photo">
+                    <div class="reviews__name">The Departed</div>
+                    <div class="reviews__company">User Reviews</div>
+                    <div class="reviews__rating">
+                        <img src="images/star.svg" alt="star" class="reviews__star">
+                        <img src="images/star.svg" alt="star" class="reviews__star">
+                        <img src="images/star.svg" alt="star" class="reviews__star">
+                        <img src="images/star.svg" alt="star" class="reviews__star">
+                        <img src="images/star.svg" alt="star" class="reviews__star reviews__star-unactive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog-sm">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">
+                        Let's talk!
+                    </h3>
+                    <div class="modal__subtitle">
+                        Call me or send me a request
+                    </div>
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img src="images/smartphone-call.svg" alt="Phone" class="contact__info-icon"> (812) 56 3652
+                        </li>
+                        <li class="contact__info-item">
+                            <img src="images/mail.svg" alt="Mail" class="contact__info-icon"> my_email@gmail.com
+                        </li>
+                    </ul>
+                    <form action="/" method="GET">
+                        <div class="form__group">
+                            <label for="input-email" class="form__label">Address e-mail</label>
+                            <input type="text" name="input-email" placeholder="Address e-mail" id="input e-mail"
+                                class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="input-text" class="form__label">Request</label>
+                            <textarea name="input-text" id="input-text" placeholder="Type your request..."
+                                class="form__textarea"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact__right"></div>
+            </div>
+        </div>
+    </div>
+    <!--задание 8-->
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal__content">
+                <h3 class="modal__title text-center">resume</h3>
+
+                <div class="text-center">
+                    <a class="btn btn--thin">download pdf</a>
+                    <a class="btn btn--thin">print</a>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__col timeline__col--left">
+
+
+                        <div class="timeline__item">
+                            <h4 class="timeline__title">EXPERIENCE</h4>
+                            <time class="timeline__date" datetime="03-28-2021">2015 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">The Cry Baby Killer</h5>
+
+                            <div class="timeline__position">Filmmaker</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                sint tempora omnis harum repellendus tempore tenetur nostrum rem dolores? Iure
+                                architecto alias ipsum eos sunt ipsam minima delectus quia nisi.
+                            </div>
+
+                        </div>
+
+                        <div class="timeline__item">
+
+                            <time class="timeline__date" datetime="03-28-2021">2015 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">The Cry Baby Killer</h5>
+
+                            <div class="timeline__position">Filmmaker</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                sint tempora omnis harum repellendus tempore tenetur nostrum rem dolores? Iure
+                                architecto alias ipsum eos sunt ipsam minima delectus quia nisi.
+                            </div>
+
+                        </div>
+
+                        <div class="timeline__item">
+
+                            <time class="timeline__date" datetime="03-28-2021">2015 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">The Cry Baby Killer</h5>
+
+                            <div class="timeline__position">Filmmaker</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                sint tempora omnis harum repellendus tempore tenetur nostrum rem dolores? Iure
+                                architecto alias ipsum eos sunt ipsam minima delectus quia nisi.
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--любой текст-->
+                    <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">EDUCATION</h4>
+                        <div class="timeline__item">
+
+                            <time class="timeline__date" datetime="03-28-2021">1954 - 1969</time>
+                            <h5 class="timeline__subtitle">Manasquan High School</h5>
+                            <div class="timeline__position">Spring Lake, NJ
+                            </div>
+                            <time class="timeline__date" datetime="03-28-2021">In 2004</time>
+                            <h5 class="timeline__subtitle">High School Reunion</h5>
+                            <div class="timeline__position">5 line rood, NJ
+                            </div>
+                            <h4 class="timeline__title">Skills</h4>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">Actor</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">filmmaker</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">Director</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 40%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="timeline__item">
+                            <h4 class="timeline__title">Awards</h4>
+                            <time class="timeline__date" datetime="03-28-2021">2005-2010</time>
+                            <h5 class="timeline__subtitle">Oscar wins</h5>
+                            <div class="timeline__position">Los Angeles, USA</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eligendi, enim? Architecto odit, dolorem, ex alias inventore, quae voluptatum a
+                                exercitationem in suscipit facere hic totam animi dolorum adipisci? Repellat, eaque.
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="text-center">
+                    <a class="btn">Hire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--задание 9-->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/image_1.jpg">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/image_2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">The departed</h3>
+                        <div class="modal-work__info">Crime
+                            <span class="modal-work__divider">|</span> 2006
+                        </div>
+                    </div>
+                    <div class="modal-work__about">
+                        <div class="modal-work__about-title">Director:</div>
+                        <div class="modal-work__about-movie">Martin Scorsese</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi quis quibusdam
+                            expedita quaerat labore aut quod. Explicabo optio minus illo ea distinctio magni placeat
+                            corporis, ullam ab dolores maiores!</p>
+
+                        <p>Lorem ipsum, dolor sit ametum, dolor sit amet consectetur adipisicing elit. Et aliquid aspum,
+                            dolor sit amet consectetur adipisicing elit. Et aliquid asp consectetur adipisicing elit. Et
+                            aliquid asperiores delectus earum, nulla, deleniti voluptatibus in est amet at soluta, odio
+                            nihil. Accusantium maxime voluptate magni nisi quis nesciunt.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button"><img src="images/back.svg"
+                                height="12">Previous</button>
+                        <button class="modal-work__btn slickNext" type="button">Next <img src="images/next.svg"
+                                height="12"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--9.1-->
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/plage.jpg">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/plage2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">The Pledge</h3>
+                        <div class="modal-work__info">Crime
+                            <span class="modal-work__divider">|</span> 2001
+                        </div>
+                    </div>
+                    <div class="modal-work__about">
+                        <div class="modal-work__about-title">Director:</div>
+                        <div class="modal-work__about-movie">Sean Penn</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi quis quibusdam
+                            expedita quaerat labore aut quod. Explicabo optio minus illo ea distinctio magni placeat
+                            corporis, ullam ab dolores maiores!</p>
+
+                        <p>Lorem ipsum, dolor sit ametum, dolor sit amet consectetur adipisicing elit. Et aliquid aspum,
+                            dolor sit amet consectetur adipisicing elit. Et aliquid asp consectetur adipisicing elit. Et
+                            aliquid asperiores delectus earum, nulla, deleniti voluptatibus in est amet at soluta, odio
+                            nihil. Accusantium maxime voluptate magni nisi quis nesciunt.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button"><img src="images/back.svg"
+                                height="12">Previous</button>
+                        <button class="modal-work__btn slickNext" type="button">Next <img src="images/next.svg"
+                                height="12"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--9.2-->
+
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/as good.jpg">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/as good2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">AS GOOD AS IT GETS</h3>
+                        <div class="modal-work__info">Drama
+                            <span class="modal-work__divider">|</span> 1997
+                        </div>
+                    </div>
+                    <div class="modal-work__about">
+                        <div class="modal-work__about-title">Director:</div>
+                        <div class="modal-work__about-movie">James Brooks</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi quis quibusdam
+                            expedita quaerat labore aut quod. Explicabo optio minus illo ea distinctio magni placeat
+                            corporis, ullam ab dolores maiores!</p>
+
+                        <p>Lorem ipsum, dolor sit ametum, dolor sit amet consectetur adipisicing elit. Et aliquid aspum,
+                            dolor sit amet consectetur adipisicing elit. Et aliquid asp consectetur adipisicing elit. Et
+                            aliquid asperiores delectus earum, nulla, deleniti voluptatibus in est amet at soluta, odio
+                            nihil. Accusantium maxime voluptate magni nisi quis nesciunt.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button"><img src="images/back.svg"
+                                height="12">Previous</button>
+                        <button class="modal-work__btn slickNext" type="button">Next <img src="images/next.svg"
+                                height="12"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--9.3-->
+    <div class="modal" id="modal_project_4">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/schmidt.png">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/schmidt2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">About schmidt</h3>
+                        <div class="modal-work__info">Drama
+                            <span class="modal-work__divider">|</span> 2002
+                        </div>
+                    </div>
+                    <div class="modal-work__about">
+                        <div class="modal-work__about-title">Director:</div>
+                        <div class="modal-work__about-movie">Alexander Payne</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi quis quibusdam
+                            expedita quaerat labore aut quod. Explicabo optio minus illo ea distinctio magni placeat
+                            corporis, ullam ab dolores maiores!</p>
+
+                        <p>Lorem ipsum, dolor sit ametum, dolor sit amet consectetur adipisicing elit. Et aliquid aspum,
+                            dolor sit amet consectetur adipisicing elit. Et aliquid asp consectetur adipisicing elit. Et
+                            aliquid asperiores delectus earum, nulla, deleniti voluptatibus in est amet at soluta, odio
+                            nihil. Accusantium maxime voluptate magni nisi quis nesciunt.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button"><img src="images/back.svg"
+                                height="12">Previous</button>
+                        <button class="modal-work__btn slickNext" type="button">Next <img src="images/next.svg"
+                                height="12"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--9.4-->
+
+    <div class="modal" id="modal_project_5">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/anger.jpg">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/anger2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">ANGER MANAGMENT</h3>
+                        <div class="modal-work__info">Comedy
+                            <span class="modal-work__divider">|</span> 2003
+                        </div>
+                    </div>
+                    <div class="modal-work__about">
+                        <div class="modal-work__about-title">Director:</div>
+                        <div class="modal-work__about-movie">Peter Segal</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi quis quibusdam
+                            expedita quaerat labore aut quod. Explicabo optio minus illo ea distinctio magni placeat
+                            corporis, ullam ab dolores maiores!</p>
+
+                        <p>Lorem ipsum, dolor sit ametum, dolor sit amet consectetur adipisicing elit. Et aliquid aspum,
+                            dolor sit amet consectetur adipisicing elit. Et aliquid asp consectetur adipisicing elit. Et
+                            aliquid asperiores delectus earum, nulla, deleniti voluptatibus in est amet at soluta, odio
+                            nihil. Accusantium maxime voluptate magni nisi quis nesciunt.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button"><img src="images/back.svg"
+                                height="12">Previous</button>
+                        <button class="modal-work__btn slickNext" type="button">Next <img src="images/next.svg"
+                                height="12"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--9.5-->
+
+    <div class="modal" id="modal_project_6">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel.svg" alt="cancel">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/blist.jpg">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/blist2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">THE BUCKET LIST</h3>
+                        <div class="modal-work__info">Comedy
+                            <span class="modal-work__divider">|</span> 2007
+                        </div>
+                    </div>
+                    <div class="modal-work__about">
+                        <div class="modal-work__about-title">Director:</div>
+                        <div class="modal-work__about-movie">Rob Reiner</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi quis quibusdam
+                            expedita quaerat labore aut quod. Explicabo optio minus illo ea distinctio magni placeat
+                            corporis, ullam ab dolores maiores!</p>
+
+                        <p>Lorem ipsum, dolor sit ametum, dolor sit amet consectetur adipisicing elit. Et aliquid aspum,
+                            dolor sit amet consectetur adipisicing elit. Et aliquid asp consectetur adipisicing elit. Et
+                            aliquid asperiores delectus earum, nulla, deleniti voluptatibus in est amet at soluta, odio
+                            nihil. Accusantium maxime voluptate magni nisi quis nesciunt.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button"><img src="images/back.svg"
+                                height="12">Previous</button>
+                        <button class="modal-work__btn slickNext" type="button">Next <img src="images/next.svg"
+                                height="12"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>
