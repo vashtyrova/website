@@ -1,10 +1,11 @@
 /* SPECIFICATION */
 
-* {
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    border: none;
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 html {
@@ -12,9 +13,19 @@ html {
 }
 
 body {
+    margin: 0;                                   
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #2b2a2c;
+}
+
+h1,
+h2,
+h3,
+h4,                             
+h5,
+h6 {
+    margin: 0;
 }
 
 body.no-scroll {
@@ -39,6 +50,7 @@ a {
 .mb-0 {
     margin-bottom: 0;
 }
+
 
 /* MODAL */
 
@@ -81,8 +93,8 @@ a {
     border: none;
     position: absolute;
     top: 0.9rem;
-    right: 1.9rem;
-    z-index: 1001;
+    right: 0.9rem;                          
+    z-index: 2;                             
     cursor: pointer;
     transition: transform 0.2s linear;
 }
@@ -96,7 +108,7 @@ a {
     text-transform: uppercase;
     color: #2b2a2c;
     font-weight: 700;
-    /*margin-bottom: 3.6rem;*/
+
 }
 
 .modal__subtitle {
@@ -104,6 +116,7 @@ a {
     font-size: 1.06rem;
     color: #2b2a2c;
 }
+
 
 /* HEADER */
 
@@ -171,6 +184,7 @@ a {
     border-radius: 20px;
 }
 
+
 /* INTRO */
 
 .intro__inner {
@@ -211,8 +225,7 @@ a {
 
 .social__link {
     margin-right: 10px;
-    width: 41px;
-    height: 41px;
+
 }
 
 .social__link img {
@@ -222,6 +235,7 @@ a {
 
 .btn {
     display: inline-block;
+    vertical-align: top;
     padding: 1.05em 1.7em;
     min-width: 170px;
     border: solid 1px #6a696b;
@@ -236,7 +250,7 @@ a {
     text-align: center;
 }
 
-.btn + .btn {
+.btn+.btn {
     margin-left: 1rem;
 }
 
@@ -246,6 +260,7 @@ a {
     right: 80px;
     z-index: 1;
 }
+
 
 /* WORKS */
 
@@ -268,9 +283,11 @@ a {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem;            
 }
 
 .portfolio__col {
+    flex-basis: 33.3%;                 
     padding: 1rem;
 }
 
@@ -306,6 +323,7 @@ a {
     font-weight: 700;
 }
 
+
 /* ABOUT ME */
 
 .about {
@@ -315,9 +333,11 @@ a {
 .about__inner {
     display: flex;
     max-width: 1090px;
+    flex-wrap: wrap;                
 }
 
-.about__photo, .about__content {
+.about__photo,
+.about__content {
     width: 50%;
 }
 
@@ -362,6 +382,7 @@ a {
     font-weight: 300;
 }
 
+
 /* REVIEWS */
 
 .reviews {
@@ -375,7 +396,7 @@ a {
 .reviews__item {
     width: 100%;
     max-width: 830px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 .reviews__text {
@@ -428,6 +449,7 @@ a {
     opacity: 0.3;
 }
 
+
 /* MODAL CONTENT */
 
 .contact {
@@ -443,7 +465,8 @@ a {
     width: 53%;
     background: #2b2a2c url('../images/jack-hire-me.jpeg') center no-repeat;
 }
-.modal__title{
+
+.modal__title {
     font-size: 3rem;
     text-transform: uppercase;
     color: #2b2a2c;
@@ -451,11 +474,11 @@ a {
     margin-bottom: 3.6rem;
 }
 
-.mb-0{
+.mb-0 {
     margin-bottom: 0;
 }
 
-.modal__subtitle{
+.modal__subtitle {
     text-transform: uppercase;
     font-size: 1.06rem;
     color: #2b2a2c;
@@ -497,7 +520,7 @@ a {
     font-weight: 700;
 }
 
-.form__input, 
+.form__input,
 .form__textarea {
     display: block;
     width: 100%;
@@ -513,13 +536,13 @@ a {
     transition: border-color 0.2s linear;
 }
 
-.form__input:focus, 
+.form__input:focus,
 .form__textarea:focus {
     outline: none;
     border-color: #36abc7;
 }
 
-.form__input::placeholder, 
+.form__input::placeholder,
 .form__textarea::placeholder {
     color: #2b2a2c;
 }
@@ -528,27 +551,33 @@ a {
     height: 200px;
     resize: none;
 }
-.modal__content{
+
+.modal__content {
     padding: 5rem 1rem;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.text-right{
+
+.text-right {
     text-align: right;
 }
-.btn--thin{
+
+.btn--thin {
     max-width: 145px;
     font-size: 0.8rem;
 }
-.timeline{
+
+.timeline {
     display: flex;
     margin: 4.2rem auto;
     width: 100%;
     max-width: 768px;
     position: relative;
 }
-.timeline:before{
+
+.timeline:before {
     content: "";
     display: block;
     width: 1px;
@@ -559,17 +588,21 @@ a {
     left: 50%;
     z-index: 1;
 }
-.timeline__col{
+
+.timeline__col {
     width: 50%;
 }
-.timeline__col--left{
+
+.timeline__col--left {
     text-align: right;
     padding-right: 3.2rem;
 }
-.timeline__col--right{
+
+.timeline__col--right {
     padding-left: 3.2rem;
 }
-.timeline__title{
+
+.timeline__title {
     margin-bottom: 2.6rem;
     margin-top: 2.6rem;
     font-size: 1.2rem;
@@ -577,124 +610,147 @@ a {
     text-transform: uppercase;
     font-weight: 700;
 }
-.timeline__item{
+
+.timeline__item {
     margin-bottom: 2.6rem;
 }
-.timeline__item:last-child{
+
+.timeline__item:last-child {
     margin-bottom: 0;
 }
-.timeline__date{
+
+.timeline__date {
     display: block;
     margin-bottom: 0.8rem;
     margin-top: 2.6rem;
     text-decoration: underline;
     font-size: 0.94rem;
-    color: #2b2a2c;  
+    color: #2b2a2c;
 }
-.timeline__subtitle{
+
+.timeline__subtitle {
     margin-bottom: 0.2rem;
     font-size: 1.06rem;
     color: #2b2a2c;
     font-weight: 700;
 }
+
 .timeline__position {
     font-size: 0.94rem;
     color: #2b2a2c;
     font-style: italic;
 }
-.timeline__text{
+
+.timeline__text {
     margin-top: 0.8rem;
     font-size: 0.8rem;
     color: #6a696b;
     font-weight: 300;
     line-height: 1.5;
 }
-.progress-bar{
+
+.progress-bar {
     margin-bottom: 2.6rem;
 }
-.progress-bar__item{
+
+.progress-bar__item {
     display: flex;
     text-align: center;
     margin-bottom: 0.3rem;
 }
-.progress-bar__title{
-    
+
+.progress-bar__title {
     font-size: 0.94rem;
     font-weight: 300;
 }
-.progress-bar__right{
+
+.progress-bar__right {
     padding-left: 1.2rem;
 }
-.progress-bar__bar{
+
+.progress-bar__bar {
     width: 130px;
     height: 6px;
     background-color: #efefef;
 }
-.progress-bar__progress{
+
+.progress-bar__progress {
     height: 100%;
     background-color: #6a696b;
 }
-.modal__work{
+
+.modal-work {
     display: flex;
 }
-.modal-work__previews{
+
+.modal-work__previews {
     width: 65%;
     position: relative;
     overflow: hidden;
 }
-.modal-work__content{
+
+.modal-work__content {
     width: 35%;
     position: relative;
     padding: 2.4rem 6.6rem 1rem 1.73rem;
 }
-.modal-work__photo{
+
+.modal-work__photo {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1;
-    transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%, -50%, 0);
 }
-.modal-work__header{
+
+.modal-work__header {
     margin-bottom: 2.2rem;
 }
-.modal-work__title{
+
+.modal-work__title {
     margin-bottom: 0.2rem;
     font-size: 2.12rem;
     color: #2b2a2c;
     font-weight: 700;
     text-transform: uppercase;
 }
-.modal-work__info{
+
+.modal-work__info {
     font-size: 1.2rem;
     color: #6a696b;
     text-transform: uppercase;
 }
-.modal-work__divider{
+
+.modal-work__divider {
     margin: 0 1rem;
-} 
-.modal-work__about{
+}
+
+.modal-work__about {
     margin-bottom: 2.2rem;
 }
-.modal-work__about-title{
-    margin-top: 2rem;
+
+.modal-work__about-title {
     margin-bottom: 0.2rem;
     font-size: 1.06rem;
     color: #2b2a2c;
     font-weight: 700;
 }
-.modal-work__about-movie{
+
+.modal-work__about-movie {
     font-size: 0.94rem;
     font-style: italic;
     color: #6a696b;
 }
-.modal-work__text{
+
+.modal-work__text {
     margin-bottom: 8.6rem;
     font-size: 0.96rem;
     color: #6a696b;
     line-height: 1.5;
     font-weight: 300;
 }
-.modal-work__footer{
+
+.modal-work__footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -704,7 +760,8 @@ a {
     left: 0;
     z-index: 1;
 }
-.modal-work__btn{
+
+.modal-work__btn {
     padding: 0;
     background: none;
     border: 0;
@@ -714,16 +771,14 @@ a {
     color: #2b2a2c;
     text-transform: uppercase;
 }
-.slickPrev {
-    padding-left: 1rem;
-}
-.slickNext {
-    padding-right: 1rem;
-} 
-.modal-work__btn:focus{
+
+
+.modal-work__btn:focus {
     outline: none;
     border: 0;
 }
+
+
 /* Slider */
 
 .slick-slider {
